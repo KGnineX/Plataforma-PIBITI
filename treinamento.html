@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- FIM GOOGLE FONTES -->
+    <link rel="stylesheet" href="style.css">
+    <title>Site de Divulgação de Olimpíadas Científicas</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="logo_clube_olímpico-removebg-preview.png" alt="Logo do Clube Olímpico" height="80" width="80">
+                </a>
+            </div><!-- logo -->
+            <nav class="menu-desktop">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="olimpiadas.html">Olimpíadas</a></li>
+                    <li><a href="treinamento.html">Treinamento</a></li>
+                    <li><a href="equipe.html">Equipe</a></li>
+                    <li><a href="noticias.html">Notícias</a></li>
+                </ul>
+            </nav>
+            <div class="btn-login-signup">
+                <a href="login.html">
+                    <button class="login">Login</button>
+                </a>
+                <a href="cadastro.html">
+                    <button class="signup">Cadastre-se</button>
+                </a>
+            </div>
+        </div><!-- interface -->
+    </header>
+    <main>
+        <section id="noticias" class="noticias">
+            <div class="interface">
+                <h2>Treinamento</h2>
+                <div class="news-tabs">
+                    <button class="tab-button" onclick="openTab('Olimpíadas de Matemática')">Olimpíadas de Matemática</button>
+                    <button class="tab-button" onclick="openTab('Olimpíadas de Química')">Olimpíadas de Química</button>
+                    <button class="tab-button" onclick="openTab('Olimpíadas de Física')">Olimpíadas de Física</button>
+                </div>
+                <div id="Olimpíadas de Matemática" class="tab-content">
+                    <h2>Olimpíadas de Matemática</h2>
+                    <article>
+                        <h4>Conteúdos</h4>
+                        <p>Detalhes sobre os conteúdos de matemática e listagem dos conteúdos.</p>
+                    </article>
+                    <article>
+                        <h4>Listas e Simulados</h4>
+                        <p>Responder questões é a melhor forma de treinar, então aqui nessa seção temos listas e simulados para melhorar sua preparação. </p>
+                    </article>
+                </div>
+                <div id="Olimpíadas de Química" class="tab-content" style="display: none;">
+                    <h2>Olimpíadas de Química</h2>
+                    <article>
+                        <h4>Conteúdos</h4>
+                        <p>Detalhes sobre os conteúdos de química e listagem dos conteúdos.</p>
+                    </article>
+                    <article>
+                        <h4>Listas e Simulados</h4>
+                        <p>Responder questões é a melhor forma de treinar, então aqui nessa seção temos listas e simulados para melhorar sua preparação. </p>
+                    </article>
+                </div>
+                <div id="Olimpíadas de Física" class="tab-content" style="display: none;">
+                    <h2>Olimpíadas de Física</h2>
+                    <article>
+                        <h4>Conteúdos</h4>
+                        <p>Detalhes sobre os conteúdos de física e listagem dos conteúdos.</p>
+                    </article>
+                    <article>
+                        <h4>Listas e Simulados</h4>
+                        <p>Responder questões é a melhor forma de treinar, então aqui nessa seção temos listas e simulados para melhorar sua preparação. </p>
+                    </article>
+                </div>
+            </div>
+        </section><!-- noticias -->
+    </main>
+    <footer>
+        <div class="interface">
+            <div class="footer-info">
+                <p>&copy; 2024 Clube Olímpico. Todos os direitos reservados.</p>
+                <p>Contato: <a href="mailto:contato@clubeolimpico.com">contato@clubeolimpico.com</a></p>
+            </div>
+        </div><!-- interface -->
+    </footer>
+    <script>
+        function openTab(tabId) {
+            const tabs = document.querySelectorAll('.tab-content');
+            tabs.forEach(tab => {
+                tab.style.display = 'none';
+            });
+            document.getElementById(tabId).style.display = 'block';
+        }
+    </script>
+</body>
+</html>

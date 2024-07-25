@@ -1,0 +1,439 @@
+/* ESTILO GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn-contato button {
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: blue;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-contato button:hover {
+  box-shadow: 0 0 8px rgb(0, 4, 255);
+  transform: scale(1.05);
+}
+/* Estilo dos Botões de Login e Sign Up */
+.btn-login-signup {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-login-signup a {
+  text-decoration: none;
+}
+
+.btn-login-signup button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-login-signup .login {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.btn-login-signup .signup {
+  background-color: #28A745;
+  color: #fff;
+}
+
+.btn-login-signup button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+/* Estilo das Abas de Notícias */
+.news-tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tab-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background-color: #f8f9fa;
+  color: #333;
+  transition: 0.2s;
+}
+
+.tab-button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+
+
+/* ESTILO DO CABEÇALHO */
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #5c5c5c;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+header a:hover {
+  color: #000;
+  transform: scale(1.05);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+  padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1 {
+  color: blue;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+  color: #fff;
+  font-size: 84px;
+}
+
+.topo-do-site .txt-topo-site p {
+  color: rgb(55, 16, 163);
+  margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+/* ESTILO DAS SEÇÕES */
+section {
+  padding: 60px 4%;
+}
+
+section h2 {
+  color: blue;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ESTILO DO RODAPÉ */
+footer {
+  background-color: #f8f8f8;
+  padding: 20px 4%;
+  text-align: center;
+}
+
+footer .footer-info {
+  color: #777;
+}
+
+footer .footer-info a {
+  color: blue;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+footer .footer-info a:hover {
+  text-decoration: underline;
+}
+/* ESTILO GERAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  height: 100vh;
+}
+
+.interface {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.btn-contato button {
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: blue;
+  border: 0;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-contato button:hover {
+  box-shadow: 0 0 8px rgb(54, 54, 228);
+  transform: scale(1.05);
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+  padding: 40px 4%;
+}
+
+header > .interface {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header a {
+  color: #5c5c5c;
+  text-decoration: none;
+  display: inline-block;
+  transition: 0.2s;
+}
+
+header a:hover {
+  color: #000;
+  transform: scale(1.05);
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  padding: 0 40px;
+}
+
+/* ESTILO DO TOPO DO SITE */
+section.topo-do-site {
+  padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+  align-items: center;
+  justify-content: center;
+  gap: 90px;
+}
+
+.topo-do-site h1 {
+  color: blue;
+  font-size: 42px;
+  line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span {
+  color: #fff;
+  font-size: 84px;
+}
+
+.topo-do-site .txt-topo-site p {
+  color: blue;
+  margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+  position: relative;
+  animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: 30px;
+  }
+}
+
+/* ESTILO DAS SEÇÕES */
+section {
+  padding: 60px 4%;
+}
+
+section h2 {
+  color: blue;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* ESTILO DAS OLIMPÍADAS */
+section.olimpiadas {
+  padding: 60px 4%;
+}
+
+.lista-olimpiadas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.lista-olimpiadas .olimpiada {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.lista-olimpiadas .olimpiada img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.lista-olimpiadas .olimpiada h3 {
+  color: blue;
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.lista-olimpiadas .olimpiada p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* ESTILO DO RODAPÉ */
+footer {
+  background-color: #f8f8f8;
+  padding: 20px 4%;
+  text-align: center;
+}
+
+footer .footer-info {
+  color: #777;
+}
+
+footer .footer-info a {
+  color: blue;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+footer .footer-info a:hover {
+  text-decoration: underline;
+}
+
+/* Estilo dos Botões de Login e Sign Up */
+.btn-site-olimpiada {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-site-olimpiada a {
+  text-decoration: none;
+}
+
+.btn-site-olimpiada button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-site-olimpiada .login {
+  background-color: #007BFF;
+  color: #fff;
+}
+
+.btn-site-olimpiada .signup {
+  background-color: #28A745;
+  color: #fff;
+}
+
+.btn-site-olimpiada button:hover {
+  opacity: 0.9;
+  transform: scale(1.05);
+}
